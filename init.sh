@@ -1,5 +1,8 @@
 #/bin/bash
 
+git submodule init
+git submodule update
+
 BACKUP_DIR="/tmp/$(date)"
 mkdir "$BACKUP_DIR"
 
