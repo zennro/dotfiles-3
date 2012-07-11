@@ -12,3 +12,5 @@ fi
 PROMPT='%{$fg[red]%}[%n@%m] $(git_prompt_info) %{$fg[blue]%}%3~ $ARROW %{${fg[default]}%}'
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
+
+precmd () { print -Pn "\e]1;`hostname | cut -d. -f1`%~\a" }
