@@ -14,6 +14,13 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%}]%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-PROMPT='%{$fg[red]%}[%n@%m] $(git_prompt_info) %{$fg[blue]%}%3~ ➤  %{${fg[default]}%}'
+if [ $SSH_TTY ]; then
+    # connected via ssh - colourise host to indicate this
+    ARROW="%{$fg[blue]%}➤ "
+else
+    ARROW="%{$fg[yellow]%}➤ "
+fi
+
+PROMPT='%{$fg[red]%}[%n@%m] $(git_prompt_info) %{$fg[blue]%}%3~ $ARROW  %{${fg[default]}%}'
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
