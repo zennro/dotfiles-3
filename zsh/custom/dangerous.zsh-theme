@@ -9,6 +9,6 @@ else
     ARROW="%{$fg[yellow]%}➤ "
 fi
 
-PROMPT='%{$fg[red]%}[%n@%m] $(git_prompt_info) %{$fg[blue]%}%3~ $ARROW  %{${fg[default]}%}'
+PROMPT='%{$fg[red]%}[%n@%m] $(git_prompt_info) %{$fg[blue]%}%3~ $ARROW %{${fg[default]}%}'
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
