@@ -14,3 +14,6 @@ ln -s dotfiles/vim ~/.vim
 
 mv ~/.vimrc "$BACKUP_DIR"
 ln -s dotfiles/vim/vimrc ~/.vimrc
+
+mv ~/.tmux.conf "$BACKUP_DIR"
+ln -s dotfiles/tmux/tmux.conf ~/.tmux.conf
