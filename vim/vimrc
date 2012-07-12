@@ -44,10 +44,10 @@ set smartcase " ignorecase unless search contains an uppercase letter
 set expandtab     " uses spaces instead of tabs
 set listchars=tab:▸\ ,eol:¬
 set shiftround    " indent to nearest tabstops
-set shiftwidth=4  " amount of whitespace to add or remove using > and <
+set shiftwidth=2  " amount of whitespace to add or remove using > and <
 set smarttab      " backspace tabs where appropriate even though they are spaces
-set softtabstop=4 " allows us to backspace over 4 spaces at a time
-set tabstop=4     " specifies the width of a tab character
+set softtabstop=2 " allows us to backspace over 2 spaces at a time
+set tabstop=2     " specifies the width of a tab character
 
 if has("autocmd")
     " Enable file type detection.
