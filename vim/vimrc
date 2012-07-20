@@ -113,8 +113,6 @@ nmap              <leader>v   :e $MYVIMRC<CR> " easy .vimrc editing
 nmap     <silent> <leader>w   :set wrap!<CR>
 nnoremap <silent> <leader>,   :call NERDComment(0, "toggle")<CR>
 vnoremap <silent> <leader>,    <ESC>:call NERDComment(1, "toggle")<CR>
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " Move visual selection around
 vmap <C-h> x<BS>P`[v`]
