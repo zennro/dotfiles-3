@@ -19,3 +19,6 @@
 [submodule "tmux/tmux-colors-solarized"]
 	path = tmux/tmux-colors-solarized
 	url = git://github.com/seebi/tmux-colors-solarized.git
+[submodule "vim/bundle/vim-yankstack"]
+	path = vim/bundle/vim-yankstack
+	url = git://github.com/maxbrunsfeld/vim-yankstack.git
