@@ -37,3 +37,5 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 setopt rmstarsilent
 setopt nohistverify
+
+export EDITOR=vim
