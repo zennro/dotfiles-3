@@ -152,5 +152,6 @@ colorscheme solarized
 
 " Supertab completion should use omni-completion
 let g:supertabdefaultcompletiontype = "context"
+
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
