@@ -82,6 +82,7 @@ if has("autocmd")
     au WinLeave * setlocal nocursorline
 
     au bufwritepost .vimrc source ~/.vimrc                                                 
+    au bufwritepost .vimrc call Pl#Load()
 
     " leave insert mode after 15 seconds of inactivity
     au CursorHoldI * stopinsert
