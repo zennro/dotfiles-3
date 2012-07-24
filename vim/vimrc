@@ -12,7 +12,7 @@ call pathogen#helptags()
 
 " GENERAL SETUP
 set nobackup
-set colorcolumn=+1
+"set colorcolumn=+1
 set history=50
 set number
 set nopaste
