@@ -24,10 +24,13 @@
 	url = git://github.com/dangerous/YankRing.vim.git
 [submodule "vim/bundle/vim-powerline.git"]
 	path = vim/bundle/vim-powerline.git
-	url = git://github.com/Lokaltog/vim-powerline.git
+	url = git@github.com:dangerous/vim-powerline.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
 [submodule "vim/bundle/syntastic.git"]
 	path = vim/bundle/syntastic.git
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "tmux/tmux-powerline"]
+	path = tmux/tmux-powerline
+	url = git@github.com:dangerous/tmux-powerline.git
