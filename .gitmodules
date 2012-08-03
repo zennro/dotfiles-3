@@ -31,3 +31,6 @@
 [submodule "vim/bundle/syntastic.git"]
 	path = vim/bundle/syntastic.git
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "tmux/tmux-powerline"]
+	path = tmux/tmux-powerline
+	url = git@github.com:dangerous/tmux-powerline.git
