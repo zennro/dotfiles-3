@@ -83,11 +83,6 @@ if has("autocmd")
 
     au bufwritepost .vimrc source ~/.vimrc                                                 
     au bufwritepost .vimrc call Pl#Load()
-
-    " leave insert mode after 15 seconds of inactivity
-    au CursorHoldI * stopinsert
-    au InsertEnter * let updaterestore=&updatetime | set updatetime=15000
-    au InsertLeave * let &updatetime=updaterestore
 else
     set autoindent " always set autoindenting on
 endif
