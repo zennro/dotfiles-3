@@ -2,7 +2,7 @@
 " David Rainsford - david@rainsford.org
 " http://www.rainsford.org
 
-" use vim settings rather than vi settings
+" use vim settings rather than vi settingslkjdsaj
 " this must be first, because it changes other options as a side effect
 set nocompatible
 
@@ -12,7 +12,7 @@ call pathogen#helptags()
 
 " GENERAL SETUP
 set nobackup
-"set colorcolumn=+1
+set formatoptions+=l
 set history=50
 set number
 set nopaste
