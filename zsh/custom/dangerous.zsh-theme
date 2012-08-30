@@ -30,9 +30,10 @@ function git_cwd_info() {
 
     GIT_DIRTY=""
     if [[ "$GIT_REPO_PATH" != '.' && `git ls-files -m` != "" ]]; then
+      #GIT_DIRTY=" ☠"
       GIT_DIRTY=" ✗"
     fi
-    echo " %{$fg[blue]%}$GIT_BRANCH%{$reset_color%}@%{$fg[magenta]%}$GIT_COMMIT_ID%{$fg[blue]%}$GIT_MODE%{$fg[red]%}$GIT_DIRTY%{$reset_color%}"
+    echo " %{$fg[yellow]%}[git:%{$fg[blue]%}$GIT_BRANCH%{$reset_color%}@%{$fg[magenta]%}$GIT_COMMIT_ID%{$fg[blue]%}$GIT_MODE%{$fg[red]%}$GIT_DIRTY%{$fg[yellow]%}]%{$reset_color%}"
   fi
 }
 if [ $SSH_TTY ]; then
@@ -45,7 +46,7 @@ tilde_or_pwd() {
   echo $PWD | sed -e "s/\/Users\/$USER/~/"
 }
 
-export PROMPT='%{$fg[magenta]%}%n@%M%{$reset_color%}
+export PROMPT='%{$fg[magenta]%}%n@%M %{$fg[green]%}$(tilde_or_pwd)%{$reset_color%}$(git_cwd_info)
 $ARROW%{$reset_color%} '
-export RPROMPT='%{$fg[green]%}$(tilde_or_pwd) $(git_cwd_info)%{$reset_color%}'
+export RPROMPT=''
 export LSCOLORS="exfxcxdxbxegedabagacad"
