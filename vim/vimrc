@@ -2,7 +2,7 @@
 " David Rainsford - david@rainsford.org
 " http://www.rainsford.org
 
-" use vim settings rather than vi settingslkjdsaj
+" use vim settings rather than vi settings
 " this must be first, because it changes other options as a side effect
 set nocompatible
 
