@@ -40,3 +40,7 @@ setopt nohistverify
 
 export EDITOR=vim
 zstyle ':completion:*' matcher-list ''
+
+alias pushdep='cd && sudo rsync -av --exclude=deployment-scripts/modules ~deploy/deployment-scripts . && sudo chown -R david deployment-scripts && cd deployment-scripts && git push'
+
+alias ss='sudo su -'
