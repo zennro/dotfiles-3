@@ -153,6 +153,7 @@ let g:ctrlp_max_files=100000
 let g:ctrlp_user_command = {
   \ 'types': {
     \ 1: ['.git', 'cd %s && git ls-files && foreach dir in `grep "path =" .gitmodules 2>/dev/null | cut -d= -f2`; do cd $dir>/dev/null && git ls-files | sed -e "s@^@$dir\/@" -e "s@^\./@@" && cd ->/dev/null; done'],
+    \ 2: ['.gitxxx', 'cd %s && git ls-files'],
   \ },
   \ 'fallback': 'find %s -type f | head -1000'
 \ }
