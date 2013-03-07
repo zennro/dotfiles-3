@@ -9,6 +9,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+set rtp+=~/dotfiles/powerline/powerline/powerline/bindings/vim
 
 " GENERAL SETUP
 set nobackup
@@ -144,6 +145,4 @@ colorscheme solarized
 
 " Supertab completion should use omni-completion
 let g:supertabdefaultcompletiontype = "context"
-let g:Powerline_colorscheme = 'dangerous'
-let g:Powerline_symbols = 'fancy'
 set laststatus=2
