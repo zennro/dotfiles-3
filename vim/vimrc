@@ -146,3 +146,12 @@ colorscheme solarized
 " Supertab completion should use omni-completion
 let g:supertabdefaultcompletiontype = "context"
 set laststatus=2
+
+" Ctrl-P plugin
+let g:ctrlp_max_files=1000
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && foreach dir in `grep path .gitmodules | cut -d= -f2 | perl -pe "s/^ /.\n/" | sort | uniq `; do cd $dir>/dev/null && git ls-files | sed -e "s@^@$dir\/@" -e "s@^\./@@" && cd ->/de    v/null; done'],
+    \ },
+  \ 'fallback': 'find %s -type f | head -' . g:ctrlp_max_files
+  \ }
