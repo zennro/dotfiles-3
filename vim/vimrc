@@ -9,6 +9,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+set rtp+=~/dotfiles/powerline/powerline/powerline/bindings/vim
 
 " GENERAL SETUP
 set nobackup
@@ -144,6 +145,16 @@ set background=dark
 
 " Supertab completion should use omni-completion
 let g:supertabdefaultcompletiontype = "context"
-let g:Powerline_colorscheme = 'dangerous'
-let g:Powerline_symbols = 'compatible'
 set laststatus=2
+"
+
+" Ctrl-P plugin
+let g:ctrlp_max_files=100000
+if has("unix")
+  let g:ctrlp_user_command = {
+    \ 'types': {
+      \ 1: ['.git', 'cd %s && git ls-files'],
+    \ },
+    \ 'fallback': 'find %s -type f | head -1000'
+  \ }
+endif

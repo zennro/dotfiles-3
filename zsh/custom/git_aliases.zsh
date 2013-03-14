@@ -37,6 +37,7 @@ git_current_branch() {
 }
 alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 alias gl='glog --graph'
+alias glh='gl | head'
 alias gla='gl --all'
 gls() {
   query="$1"
