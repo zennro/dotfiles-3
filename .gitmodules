@@ -44,3 +44,9 @@
 	path = z
 	url = https://github.com/rupa/z.git
   ignore = dirty
+[submodule "auto-pairs"]
+  path = vim/bundle/auto-pairs
+  url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/bundle/auto-pairs"]
+	path = vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
