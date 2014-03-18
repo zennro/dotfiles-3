@@ -4,7 +4,7 @@ git submodule init
 git submodule update
 
 #BACKUP_DIR="/tmp/$(date)"
-BACKUP_DIR="/home/dev/backups"
+BACKUP_DIR=$HOME"/backups"
 mkdir "$BACKUP_DIR"
 
 mv ~/.zshrc "$BACKUP_DIR"
